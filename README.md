@@ -36,10 +36,6 @@
 
 ## groupsテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|group_id|integer|foreign_key: true|
-
 ### Association
 - has_many :messages
 - has_many :members, through: :messages
