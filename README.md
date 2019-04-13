@@ -34,7 +34,8 @@
 
 ### Association
 - has_many :messages
-- has_many :group
+- has_many :groups
+- belongs_to :member
 
 ## groupsテーブル
 
