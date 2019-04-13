@@ -24,7 +24,7 @@
 - belongs_to :user
 - belongs_to :group
 
-##usersテーブル
+## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -32,16 +32,16 @@
 |name|string|null: false|
 |mail|string|null: false, unique: true|
 
-###Association
+### Association
 - has_many :messages
 - has_many :group
 
-##groupsテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |group_id|integer|foreign_key: true|
 
-###Association
+### Association
 - has_many :messages
 - has_many :members, through: :messages
