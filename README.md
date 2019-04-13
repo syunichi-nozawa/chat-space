@@ -26,9 +26,6 @@
 
 ## usersテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false|
 |name|string|null: false|
 |mail|string|null: false, unique: true|
 
