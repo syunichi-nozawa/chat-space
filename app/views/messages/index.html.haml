@@ -6,14 +6,25 @@
     .chatscreen
     .wrapper
       .chat__side
+        .side__header
+        %p
+          test-user
+        %i.fa.fa-cog
+        .groups
       .chat__main
         .main__header
         %p
           text-group
+        %p
+          Member:test-user
         .messages
-          .message__info
-          %p 
-            test-user
-          .message__text
-          %p
-            こんにちは！
+          .message
+            .message__info
+              .message__info__user
+              %p 
+                test-user
+              .message__info__date
+            .message__text
+            %p
+              こんにちは！
+        .form
