@@ -10,16 +10,14 @@
               .user__menu__edit__user
               %li
                 user-name__edit-user
-                %a{ href: '/group/new'}
-                  =link_to
+                  =link_to '#'
                     %i.fa.fa-edit
             %li
               user-menu__new-group
-              %a{ href: '/users/edit'}
-                =link_to
+                =link_to '#'
                   %i.fa.fa-cog
           .groups
-            %a{ href: '/group/messages'}
+            =link_to '#'
             .group
               %p
                 test-group
@@ -32,7 +30,7 @@
                 text-group
               %ul
                 Member:test-user
-            %a{ href: '/groups/edit'}
+            =link_to '#'
               .main__header__edit-btn
           .messages
             .message
