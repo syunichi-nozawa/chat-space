@@ -1,0 +1,53 @@
+.chatscreen
+      .wrapper
+        .chat__side
+          .side__header
+            .side__header__user__name
+            %p
+              test-user
+            %ul
+              user-menu
+              .user__menu__edit__user
+              %li
+                user-name__edit-user
+                  =link_to '#'
+                    %i.fa.fa-edit
+            %li
+              user-menu__new-group
+                =link_to '#'
+                  %i.fa.fa-cog
+          .groups
+            =link_to '#'
+            .group
+              %p
+                test-group
+              %p
+                さようなら
+        .chat__main
+          .main__header
+            .current__group
+              %h2
+                text-group
+              %ul
+                Member:test-user
+            =link_to '#'
+              .main__header__edit-btn
+          .messages
+            .message
+              .message__info
+                .message__info__user
+                %p 
+                  test-user
+                .message__info__date
+              .message__text
+              %p
+                こんにちは!
+          .form
+            %form{ id: new_message, enctype: "multipart/form-data", action: "groups/messages", accept-charaset: "UTF-8", method: "post"}
+            %input{ name: "utf8",type: "hidden",value: "✔︎"}
+            %input{ type: "hidden",name: "authenticity_token",value: ""}
+            .input__box
+              %input{ type: "submit",name: "commit",value: "Send",class: "new__message__submit__btn",data__disable__with: "Send"}
+            %label.upload-label{for: "upload-icon"}
+              %i.fa.fa-picture-o
+              = f.file_field :image, id: "upload-icon"
