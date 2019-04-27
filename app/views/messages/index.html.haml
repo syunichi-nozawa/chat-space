@@ -7,10 +7,10 @@
         %ul.user__menu
           %li.user__menu__edit-user
             =link_to '#' do
-              %i.fa.fa-edit
+              %i.fa.fa_edit
           %li.user__menu__new-group
           =link_to '#' do
-            %i.fa.fa-cog
+            %i.fa.fa_cog
       .groups
         =link_to '#' do
           .group
@@ -18,7 +18,7 @@
             %p.group__latest-message さようなら
     .chat-main
       .main-header
-        %div.current__group
+        .current__group
           %h2.current__group-name text-group
           %ul.member__list
             "
@@ -40,6 +40,6 @@
           .input-box
             %input{ placeholder: "type a messeage",class: "input-box__text",type: "text",name: "message[content]",id: "message_content"}
             %label{ class: "image-label", for:"message-image"}
-              %i.fa.fa-image
+              %i.fa.fa_icon
               %input{ class: "image-label__input",type: "file",name: "message[image]",id: "message__image"}
             %input{ type: "submit",name: "commit",value: "Send",class: "new-message__submit-btn",data__disable__with: "Send"}
