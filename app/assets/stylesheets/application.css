@@ -147,7 +147,7 @@ legend {
   display: flex;
 }
 
-.chat__side {
+.chat-side {
   width: 300px;
   color: white;
   display: -webkit-box;
@@ -155,7 +155,7 @@ legend {
   display: flex;
 }
 
-.chat__side .side__header {
+.chat-side .side-header {
   background-color: #253141;
   height: 100px;
   width: 100%;
@@ -172,56 +172,56 @@ legend {
           justify-content: space-between;
 }
 
-.chat__side .side__header__user-name {
+.chat-side .side-header__user-name {
   color: #FFFFFF;
   font-size: 16px;
   margin-right: auto;
 }
 
-.chat__side .side__header .user__menu {
+.chat-side .side-header .user__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.chat__side .side__header .user__menu__edit-user {
+.chat-side .side-header .user__menu__edit-user {
   margin-left: 0.3rem;
 }
 
-.chat__side .side__header .user__menu__edit-user .fa {
+.chat-side .side-header .user__menu__edit-user .fa {
   display: inline-block;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
 
-.chat__side .side__header .user__menu__edit-user .fa__new-group {
+.chat-side .side-header .user__menu__new-group {
   margin-left: 0.3rem;
 }
 
-.chat__side .side__header .user__menu__edit-user .fa__new-group .fa {
+.chat-side .side-header .user__menu__new-group .fa {
   display: inline-block;
   font-size: inherit;
   text-rendering: auto;
 }
 
-.chat__side .groups {
+.chat-side .groups {
   height: calc(100vh-100px);
   background-color: #2f3e51;
   padding: 20px 20px 0;
   overflow: scroll;
 }
 
-.chat__side .groups .group {
+.chat-side .groups .group {
   margin-bottom: 40px;
 }
 
-.chat__side .groups .group__group-name {
+.chat-side .groups .group__group-name {
   font-size: 15px;
   margin-bottom: 5px;
 }
 
-.chat__side .groups .group__latest-message {
+.chat-side .groups .group__latest-message {
   font-size: 11px;
 }
 
@@ -232,7 +232,7 @@ legend {
   display: flex;
 }
 
-.chat-main .main__header {
+.chat-main .main-header {
   height: 100px;
   padding: 0 40px;
   display: -webkit-box;
@@ -244,18 +244,18 @@ legend {
   border-bottom: soild 1px #eee;
 }
 
-.chat-main .main__header .current__group {
+.chat-main .main-header .current__group {
   font-size: 20px;
   color: #333;
   margin-top: 35px;
 }
 
-.chat-main .main__header .current__group-name {
+.chat-main .main-header .current__group-name {
   font-size: 100%;
   font-weight: normal;
 }
 
-.chat-main .main__header .current__group .member_list {
+.chat-main .main-header .current__group .member__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +264,7 @@ legend {
   color: #999999;
 }
 
-.chat-main .main__header__edit-btn {
+.chat-main .main-header__edit-btn {
   height: 40px;
   line-height: 40px;
   padding: 0 20px;
