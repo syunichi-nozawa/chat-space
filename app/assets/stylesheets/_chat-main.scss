@@ -77,10 +77,13 @@
     .new-message{
       display: flex;
       justify-content: flex-end;
+      box-sizing: border-box;
     
     .input-box{
       position: relative;
       width: 100%;
+      padding-right: 150px;
+
 
       &__text{
         height: 50px;
@@ -94,6 +97,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        padding-right: 100px;
         cursor: pointer;
 
         &__input{
