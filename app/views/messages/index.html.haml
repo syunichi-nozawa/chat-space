@@ -9,8 +9,8 @@
             =link_to '#' do
               %i.fa.fa_edit
           %li.user__menu__new-group
-          =link_to '#' do
-            %i.fa.fa_cog
+            =link_to '#' do
+              %i.fa.fa_cog
       .groups
         =link_to '#' do
           .group
@@ -26,7 +26,7 @@
             "
             %li.member__list-member sample
         =link_to '#' do
-          .main__header__edit-btn Edit
+          .main-header__edit-btn Edit
       .messages
         %div.message
           .message__info
@@ -42,4 +42,4 @@
             %label{ class: "image-label", for:"message-image"}
               %i.fa.fa_icon
               %input{ class: "image-label__input",type: "file",name: "message[image]",id: "message__image"}
-            %input{ type: "submit",name: "commit",value: "Send",class: "new-message__submit-btn",data__disable__with: "Send"}
+          %input{ type: "submit",name: "commit",value: "Send",class: "new-message__submit-btn",data__disable__with: "Send"}
