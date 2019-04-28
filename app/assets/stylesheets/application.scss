@@ -1,9 +1,4 @@
 @import "./reset";
-
-.chatscreen{
-  color:white;
-  font-size: 1rem;
-  font-weight: lighter;
-  text-align: center;
-  width: 100%;
-}
+@import "./chatscreen.scss";
+@import "./chat-side.scss";
+@import "./chat-main.scss";
